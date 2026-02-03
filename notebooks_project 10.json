@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "7cb9b722-4498-4f05-8ad8-f3751968e629",
+      "cell_type": "code",
+      "source": "# Create the contact book dictionary\ncontacts = {\n    \"Ahmed\": \"01012345678\",\n    \"Sara\": \"01198765432\",\n    \"Omar\": \"01255544321\"\n}\n\n# Print all names in the contact book\nprint(\"Contacts names:\")\nfor name in contacts:\n    print(name)\n\n# Search for a contact by name\nsearch_name = input(\"Enter a name to search: \")\n\nif search_name in contacts:\n    print(\"Phone number:\", contacts[search_name])\nelse:\n    print(\"Contact not found\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "07fdafa5-a378-4dae-8b62-8362ba98002a",
+      "cell_type": "code",
+      "source": "# List of students\nstudents = [\n    {\"name\": \"Ahmed\", \"grades\": [80, 85, 90]},\n    {\"name\": \"Sara\", \"grades\": [75, 88, 92]},\n    {\"name\": \"Omar\", \"grades\": [70, 78, 85]}\n]\n\n# Calculate and print average for each student\nfor student in students:\n    average = sum(student[\"grades\"]) / len(student[\"grades\"])\n    print(student[\"name\"], \"average grade:\", average)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Ahmed average grade: 85.0\nSara average grade: 85.0\nOmar average grade: 77.66666666666667\n"
+        }
+      ],
+      "execution_count": 1
+    }
+  ]
+}
